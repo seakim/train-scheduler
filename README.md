@@ -1,2 +1,2 @@
 # train-scheduler
-RCB-hw7
+train scheduler using Firebase real-time database and momentJS to calculate time
