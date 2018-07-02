@@ -1,5 +1,17 @@
+.table {
+  margin-bottom: 0;
+}
 #train-table th,
 td {
   display: inline-block;
   width: 16.575%;
+  text-align: center;
+}
+
+#admin-btn {
+  width: 100%;
+}
+
+#add-train {
+  padding: 5%;
 }

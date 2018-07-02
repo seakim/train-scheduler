@@ -75,12 +75,12 @@ database.ref().on("child_added", function(childSnapshot) {
   var nextArrival = moment(currentTime, "HH:mm").add(minutesAway, 'minutes').format("HH:mm");
 
   // add to the row
-  var newRow = $("<tr>").append(
-    $("<td>").text(trainName),
-    $("<td>").text(trainDestination),
-    $("<td>").text(trainFrequency),
-    $("<td>").text(nextArrival),
-    $("<td>").text(minutesAway),
+  var newRow = $("<tr class='row'>").append(
+    $("<td class='col'>").text(trainName),
+    $("<td class='col'>").text(trainDestination),
+    $("<td class='col'>").text(trainFrequency),
+    $("<td class='col'>").text(nextArrival),
+    $("<td class='col'>").text(minutesAway),
   );
 
   // append the new row to the table
