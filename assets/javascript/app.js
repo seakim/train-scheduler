@@ -70,7 +70,7 @@ database.ref().on("child_added", function(childSnapshot) {
   var endTime = moment(currentTime, "HH:mm");
   var duration = moment.duration(endTime.diff(startTime));
   // minutesAway === frequency - duration % frequency
-  var minutesAway = trainFrequency - parseInt(duration.asMinutes()) % trainFrequency;
+  var minutesAway = -parseInt(duration.asMinutes()) % trainFrequency;
   // nextArrival === currentTime + minutesAway
   var nextArrival = moment(currentTime, "HH:mm").add(minutesAway, 'minutes').format("HH:mm");
 
